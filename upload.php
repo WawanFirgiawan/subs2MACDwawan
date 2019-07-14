@@ -59,7 +59,6 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 			<table>
 			<tr>
 				<th>File Name</th>
-				<th>URL</th>
 				<th>Action</th>
 			</tr>
 		
@@ -70,7 +69,6 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 						?>						
 						<tr >
 							<td><?php echo $blob->getName() ?></td>
-							<td><?php echo $blob->getUrl() ?></td>
 							<td>
 								<form action="analyzee.php" method="post" >
 									<input type="hidden" name="url" value="<?php echo $blob->getUrl()?>">						
