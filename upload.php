@@ -70,7 +70,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 						<tr >
 							<td><?php echo $blob->getName() ?></td>
 							<td>
-								<form action="analyzee.php" method="post" >
+								<form action="analyze.php" method="post" >
 									<input type="hidden" name="url" value="<?php echo $blob->getUrl()?>">						
 									<input type="submit" name="submit"  value="Lihat">
 								</form>
